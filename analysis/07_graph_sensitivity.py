@@ -1,29 +1,3 @@
-"""
-Graph-fitting sensitivity (reported in Section III-B and the Discussion of the paper).
-
-Question: the lagged-correlation graph is fitted once on the full official training
-period, which contains the internal-validation days that phase-1 epoch-budget selection
-uses. Does that make phase-1 validation optimistic?
-
-Test: for each city and seed, run phase 1 (train_one_run: internal_fit -> internal_val,
-early stopping) twice, changing ONLY the correlation graph:
-    "train"  : graph fitted on idx["train"]        (what the paper does; sees internal_val days)
-    "ifit"   : graph fitted on idx["internal_fit"] (blind to internal_val days)
-and compare internal-validation loss / MAE and the selected epoch budget.
-
-Run from the repo root (needs Metro_Data/, or set METRO_DATA_DIR):
-    python analysis/07_graph_sensitivity.py --city Hangzhou --seeds 5
-    python analysis/07_graph_sensitivity.py --city Shanghai --seeds 5
-    python analysis/07_graph_sensitivity.py --city Beijing  --seeds 5
-
-Results are appended to analysis/results/graph_sensitivity_<city>.json after every run, so you
-can stop and resume (finished (graph, seed) pairs are skipped). Training is real (10 runs per
-city); on CPU it takes hours, on Apple-silicon MPS considerably less.
-
-The reported results used the defaults below, which are the defaults in cahgtn/train.py
-(patience 15, minimum 25 epochs, ceiling 100, learning rate 1e-3); they were not the
-learning rate selected per city by notebook 01's phase-1 search. Check OUTPUT_BIAS_INIT too.
-"""
 import argparse, json, os, sys, time
 import numpy as np
 import torch
