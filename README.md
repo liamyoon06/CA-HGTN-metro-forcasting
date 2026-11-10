@@ -40,19 +40,17 @@ The CPU path works but is slow (Shanghai has 288 stations).
 
 ## Data
 
-Raw data is **not redistributed**. Download it from the original sources and place it as:
+Raw data is not redistributed. All three datasets use the LibCity atomic-file format
+(`.dyna`, `.rel`).
 
-```
-Metro_Data/
-  HZMETRO/HZMETRO.dyna  HZMETRO.rel  ...
-  SHMETRO/...
-  BEIJING_SUBWAY_15MIN/...
-```
-
-| City | Source | License / terms |
+| City | Description | Source |
 |---|---|---|
-| Hangzhou (80 stations), Shanghai (288 stations) | [HZMetro/SHMetro, from PVCGN, Liu et al., 2020: link] | [check] |
-| Beijing | [source: link] | [check] |
+| Hangzhou (HZMetro) | 80 stations, 15-min, Jan 2019; official split from PVCGN | Liu et al., IEEE T-ITS 2020 [link to dataset page] |
+| Shanghai (SHMetro) | 288 stations, 15-min, Jul–Sep 2016; official split from PVCGN | Liu et al., IEEE T-ITS 2020 [link to dataset page] |
+| Beijing Subway | 276 stations, 15-min; no published split (chronological 70/15/15 used here) | Zhang et al., IEEE T-ITS 2020, via LibCity [link] |
+
+Place the files as `Metro_Data/HZMETRO/`, `Metro_Data/SHMETRO/`,
+`Metro_Data/BEIJING_SUBWAY_15MIN/`. Please follow each dataset's own terms of use.
 
 Splits: Hangzhou and Shanghai use the official train/validation/test splits. Beijing uses
 a 70/15/15 chronological split, and its final refit uses the leading 85%, so it has no
