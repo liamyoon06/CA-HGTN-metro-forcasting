@@ -9,7 +9,7 @@ three graph views (physical, lagged-correlation, adaptive) through a learned gat
 with a Transformer + BiGRU.
 
 > **Paper:** [link to PDF, once available]
-> **Archived release (code, weights, large prediction files):** [Zenodo DOI]
+> **Archived release (code, weights, large prediction files):** DOI: 10.5281/zenodo.24103658
 
 ## Repository layout
 
@@ -35,7 +35,7 @@ not in this repository.
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
-Developed on [Python 3.x / PyTorch x.x / macOS with Apple-silicon MPS: fill in]. CPU works but is
+Developed on Python 3.13.9 / PyTorch 2.12.1 / macOS with Apple-silicon MPS. CPU works but is
 slow, especially for Shanghai (288 stations).
 
 ## Data
@@ -68,7 +68,7 @@ validation segment.
    on test once. Results go to `{City}_predictions.pkl`.
 3. **Evaluation:** run `02_Evaluate_and_Ablate.ipynb`.
 4. **Analysis scripts** (calibration protocols, block-aware significance tests, graph checks) are
-   documented in [`analysis/README.md`](analysis/README.md).
+   documented in (analysis/README.md).
 
 The trained checkpoints in `weights/` let you skip training for the analyses that need models.
 
