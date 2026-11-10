@@ -1,0 +1,72 @@
+{
+ "train|0": {
+  "graph": "train",
+  "seed": 0,
+  "best_epoch": 63,
+  "val_mae_15min": 24.181909561157227,
+  "val_mae_all": 24.228500366210938
+ },
+ "ifit|0": {
+  "graph": "ifit",
+  "seed": 0,
+  "best_epoch": 56,
+  "val_mae_15min": 24.559202194213867,
+  "val_mae_all": 24.56123924255371
+ },
+ "train|1": {
+  "graph": "train",
+  "seed": 1,
+  "best_epoch": 71,
+  "val_mae_15min": 24.085872650146484,
+  "val_mae_all": 23.940444946289062
+ },
+ "ifit|1": {
+  "graph": "ifit",
+  "seed": 1,
+  "best_epoch": 77,
+  "val_mae_15min": 23.865930557250977,
+  "val_mae_all": 23.75897979736328
+ },
+ "train|2": {
+  "graph": "train",
+  "seed": 2,
+  "best_epoch": 66,
+  "val_mae_15min": 23.703514099121094,
+  "val_mae_all": 23.7603816986084
+ },
+ "ifit|2": {
+  "graph": "ifit",
+  "seed": 2,
+  "best_epoch": 50,
+  "val_mae_15min": 23.982830047607422,
+  "val_mae_all": 24.17615509033203
+ },
+ "train|3": {
+  "graph": "train",
+  "seed": 3,
+  "best_epoch": 58,
+  "val_mae_15min": 24.06538963317871,
+  "val_mae_all": 24.39950180053711
+ },
+ "ifit|3": {
+  "graph": "ifit",
+  "seed": 3,
+  "best_epoch": 51,
+  "val_mae_15min": 24.018451690673828,
+  "val_mae_all": 24.249229431152344
+ },
+ "train|4": {
+  "graph": "train",
+  "seed": 4,
+  "best_epoch": 59,
+  "val_mae_15min": 24.43695640563965,
+  "val_mae_all": 24.246583938598633
+ },
+ "ifit|4": {
+  "graph": "ifit",
+  "seed": 4,
+  "best_epoch": 59,
+  "val_mae_15min": 25.03180694580078,
+  "val_mae_all": 24.906173706054688
+ }
+}

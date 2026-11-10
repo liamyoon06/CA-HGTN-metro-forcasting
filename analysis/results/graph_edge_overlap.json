@@ -1,0 +1,32 @@
+{
+ "Hangzhou": {
+  "N": 80,
+  "nnz_per_node": 8.0,
+  "edge_set_overlap_frac": 0.8765625,
+  "jaccard": 0.790959595959596,
+  "weight_corr": 0.8685317898031536,
+  "n_train_steps": 1314,
+  "n_ifit_steps": 803,
+  "axis": 1
+ },
+ "Shanghai": {
+  "N": 288,
+  "nnz_per_node": 8.0,
+  "edge_set_overlap_frac": 0.9305555555555556,
+  "jaccard": 0.8787037037037037,
+  "weight_corr": 0.930236711249123,
+  "n_train_steps": 4526,
+  "n_ifit_steps": 3796,
+  "axis": 1
+ },
+ "Beijing": {
+  "N": 276,
+  "nnz_per_node": 8.0,
+  "edge_set_overlap_frac": 0.6807065217391305,
+  "jaccard": 0.5570345918172005,
+  "weight_corr": 0.7668879492925628,
+  "n_train_steps": 1530,
+  "n_ifit_steps": 1008,
+  "axis": 1
+ }
+}

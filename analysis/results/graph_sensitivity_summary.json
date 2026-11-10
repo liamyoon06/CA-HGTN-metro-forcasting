@@ -1,0 +1,63 @@
+{
+ "note": "Phase-1 retraining, 5 paired seeds, internal_val 15-min MAE; diff = internal-fit graph minus full-train graph. Settings: patience 15, min epochs 25, ceiling 100, lr 1e-3 (train.py defaults).",
+ "Hangzhou": {
+  "full_train_graph": 24.095,
+  "internal_fit_graph": 24.292,
+  "diff": 0.197,
+  "paired_sd": 0.328,
+  "best_epoch_train": [
+   63,
+   71,
+   66,
+   58,
+   59
+  ],
+  "best_epoch_ifit": [
+   56,
+   77,
+   50,
+   51,
+   59
+  ]
+ },
+ "Shanghai": {
+  "full_train_graph": 18.976,
+  "internal_fit_graph": 18.97,
+  "diff": -0.006,
+  "paired_sd": 0.28,
+  "best_epoch_train": [
+   93,
+   89,
+   83,
+   79,
+   58
+  ],
+  "best_epoch_ifit": [
+   59,
+   84,
+   83,
+   79,
+   59
+  ]
+ },
+ "Beijing": {
+  "full_train_graph": 18.628,
+  "internal_fit_graph": 18.664,
+  "diff": 0.037,
+  "paired_sd": 0.24,
+  "best_epoch_train": [
+   76,
+   83,
+   49,
+   74,
+   90
+  ],
+  "best_epoch_ifit": [
+   92,
+   89,
+   84,
+   89,
+   82
+  ]
+ }
+}
