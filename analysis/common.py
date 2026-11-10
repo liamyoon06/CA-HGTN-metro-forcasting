@@ -1,14 +1,3 @@
-"""Shared loaders for the analysis scripts.
-
-Layout (repo root = parent of this folder; override with CAHGTN_ROOT):
-    cahgtn/                package
-    Metro_Data/            raw data (not distributed; override with METRO_DATA_DIR)
-    weights/<City>/*.pt    trained checkpoints
-    cache/                 large files from the Zenodo archive (predictions, windows, reduced npz)
-    analysis/results/      JSON outputs written by these scripts
-A file is looked up in cache/, then the repo root (where the notebooks write their outputs),
-then weights/<City>/ for checkpoints.
-"""
 import os, sys, pickle, numpy as np
 from pathlib import Path
 ROOT = Path(os.environ.get("CAHGTN_ROOT", Path(__file__).resolve().parents[1]))
