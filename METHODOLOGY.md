@@ -28,10 +28,7 @@ temporally adjacent windows.
 Test sets contain 362 (Hangzhou), 1,530 (Shanghai), and 267 (Beijing) windows.
 
 **Beijing has no published date split**, so a chronological 70/15/15 split is used. This is
-a fallback, not an established convention. For Beijing the final refit and the correlation
-graph use the leading **85%** (training plus its validation block), so Beijing has **no
-held-out validation segment**; analyses that need one (e.g. fitting the calibration scale on
-validation predictions) are unavailable for Beijing.
+a fallback, not an established convention.
 
 "Internal fit/val" is a strict subset of "train", used only for epoch-budget (and
 learning-rate) selection (§5). Internal validation periods mix weekday and weekend days so
