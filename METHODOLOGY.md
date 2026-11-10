@@ -4,12 +4,6 @@ This document summarizes the methodology of the paper ("Calibrated Distributiona
 Metro Ridership Forecasting with Multi-Graph Neural Networks", AAIML 2027); the paper is the
 authoritative source for every number.
 
-*This revision corrects the earlier version against the code in `cahgtn/` and the final
-paper. Main changes: Beijing added; extended-training protocol and learning-rate selection
-added; graph-fitting caveat stated; calibration and significance-testing protocols added;
-the stratified-by-deviation finding corrected (it is a Hangzhou-specific result, not a
-general one); the dispersion head described accurately; results updated to the final paper.*
-
 ## 1. Problem formulation
 
 Given a lookback window of `T=12` past 15-minute intervals (3 hours) of station-level
