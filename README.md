@@ -45,9 +45,10 @@ Raw data is not redistributed. All three datasets use the LibCity atomic-file fo
 
 | City | Description | Source |
 |---|---|---|
-| Hangzhou (HZMetro) | 80 stations, 15-min, Jan 2019; official split from PVCGN | Liu et al., IEEE T-ITS 2020 [link to dataset page] |
-| Shanghai (SHMetro) | 288 stations, 15-min, Jul–Sep 2016; official split from PVCGN | Liu et al., IEEE T-ITS 2020 [link to dataset page] |
-| Beijing Subway | 276 stations, 15-min; no published split (chronological 70/15/15 used here) | Zhang et al., IEEE T-ITS 2020, via LibCity [link] |
+| Hangzhou (HZMetro) | 80 stations, 15-min, Jan 2019; official split from PVCGN | Liu et al., IEEE T-ITS 2020|
+| Shanghai (SHMetro) | 288 stations, 15-min, Jul–Sep 2016; official split from PVCGN | Liu et al., IEEE T-ITS 2020|
+| Beijing Subway | 276 stations, 15-min; no published split (chronological 70/15/15 used here) | Zhang et al., IEEE T-ITS 2020, via LibCity|
+Link to datasets: https://github.com/LibCity/Bigscity-LibCity-Datasets
 
 Place the files as `Metro_Data/HZMETRO/`, `Metro_Data/SHMETRO/`,
 `Metro_Data/BEIJING_SUBWAY_15MIN/`. Please follow each dataset's own terms of use.
