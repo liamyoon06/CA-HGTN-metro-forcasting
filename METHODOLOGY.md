@@ -1,10 +1,8 @@
 # Methodology
 
-This document describes the current, decided method: what it does and why, as reference
-documentation. Results quoted here are summaries of the paper ("Calibrated Distributional
+This document summarizes the methodology of the paper ("Calibrated Distributional
 Metro Ridership Forecasting with Multi-Graph Neural Networks", AAIML 2027); the paper is the
-authoritative source for every number. For the reasoning trail behind the method, including
-rejected alternatives and experiments that did not work, see `PAPER_PLAN_2.md`.
+authoritative source for every number.
 
 *This revision corrects the earlier version against the code in `cahgtn/` and the final
 paper. Main changes: Beijing added; extended-training protocol and learning-rate selection
